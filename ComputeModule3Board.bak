@@ -1,0 +1,2767 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Pi-Compute-3-Lite_BLANK-cache
+EELAYER 25 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 1
+Title "COMPUTE MODULE 3 LIPO VERSION"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB_OTG P?
+U 1 1 59B0ABA9
+P 5865 1230
+F 0 "P?" H 6190 1105 50  0001 C CNN
+F 1 "USB_PWR" H 5865 1590 50  0000 C CNN
+F 2 "Connectors:USB_Micro-B" V 5815 1130 50  0001 C CNN
+F 3 "" V 5815 1130 50  0000 C CNN
+	1    5865 1230
+	-1   0    0    1   
+$EndComp
+Text GLabel 5020 1430 0    39   Input ~ 0
+5V
+Text Notes 5110 705  2    59   ~ 0
+POWER IN
+$Comp
+L PAM2306AYPKE U?
+U 1 1 59B0ABAA
+P 6545 2880
+F 0 "U?" H 6345 3265 60  0000 C CNN
+F 1 "PAM2306AYPKE" H 6545 2460 60  0000 C CNN
+F 2 "SON45P300X300X80-13N:SON45P300X300X80-13N" H 6570 2880 60  0001 C CNN
+F 3 "" H 6570 2880 60  0001 C CNN
+	1    6545 2880
+	1    0    0    -1  
+$EndComp
+Text GLabel 5300 2460 1    39   Input ~ 0
+5V
+Text GLabel 5920 2820 1    39   Input ~ 0
+5V
+$Comp
+L R_Small R?
+U 1 1 59B0ABAB
+P 5300 2785
+F 0 "R?" H 5330 2805 50  0000 L CNN
+F 1 "100k" H 5330 2745 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 5020 2735 28  0000 C CNN
+F 3 "" H 5300 2785 50  0000 C CNN
+	1    5300 2785
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABAC
+P 5300 3400
+F 0 "C?" H 5310 3470 50  0000 L CNN
+F 1 "100nF" H 5310 3320 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5020 3315 28  0000 C CNN
+F 3 "" H 5300 3400 50  0000 C CNN
+	1    5300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABAD
+P 5630 3400
+F 0 "C?" H 5640 3470 50  0000 L CNN
+F 1 "10uF" H 5640 3320 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6220 3115 28  0000 C CNN
+F 3 "" H 5630 3400 50  0000 C CNN
+	1    5630 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABAE
+P 5920 3400
+F 0 "C?" H 5930 3470 50  0000 L CNN
+F 1 "10uF" H 5930 3320 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6220 3065 28  0000 C CNN
+F 3 "" H 5920 3400 50  0000 C CNN
+	1    5920 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5870 3080 0    39   Input ~ 0
+GND
+Text GLabel 5870 3155 0    39   Input ~ 0
+GND
+Text GLabel 5300 3590 3    39   Input ~ 0
+GND
+Text GLabel 5630 3590 3    39   Input ~ 0
+GND
+Text GLabel 5920 3590 3    39   Input ~ 0
+GND
+$Comp
+L L_Small L?
+U 1 1 59B0ABAF
+P 7200 2855
+F 0 "L?" V 7145 2915 50  0000 L CNN
+F 1 "4.7uH" V 7145 2705 39  0000 L CNN
+F 2 "INDC0603X04:INDC0603X04" H 7200 2855 50  0001 C CNN
+F 3 "" H 7200 2855 50  0000 C CNN
+	1    7200 2855
+	0    -1   -1   0   
+$EndComp
+$Comp
+L L_Small L?
+U 1 1 59B0ABB0
+P 7200 2520
+F 0 "L?" V 7145 2580 50  0000 L CNN
+F 1 "4.7uH" V 7145 2370 39  0000 L CNN
+F 2 "INDC0603X04:INDC0603X04" H 7200 2520 50  0001 C CNN
+F 3 "" H 7200 2520 50  0000 C CNN
+	1    7200 2520
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7590 2435 1    39   Input ~ 0
+3V3
+$Comp
+L C_Small C?
+U 1 1 59B0ABB1
+P 7590 3020
+F 0 "C?" H 7600 3090 50  0000 L CNN
+F 1 "10uF" H 7600 2940 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7300 2835 28  0000 C CNN
+F 3 "" H 7590 3020 50  0000 C CNN
+	1    7590 3020
+	1    0    0    -1  
+$EndComp
+Text GLabel 7840 2770 1    39   Input ~ 0
+1V8
+$Comp
+L C_Small C?
+U 1 1 59B0ABB2
+P 7840 3020
+F 0 "C?" H 7850 3090 50  0000 L CNN
+F 1 "10uF" H 7850 2940 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7300 2795 28  0000 C CNN
+F 3 "" H 7840 3020 50  0000 C CNN
+	1    7840 3020
+	1    0    0    -1  
+$EndComp
+Text GLabel 7590 3195 3    39   Input ~ 0
+GND
+Text GLabel 7840 3195 3    39   Input ~ 0
+GND
+$Comp
+L AP7115-25SEG U?
+U 1 1 59B0ABB3
+P 5970 4680
+F 0 "U?" H 5830 4925 39  0000 C CNN
+F 1 "AP7115-25SEG" H 5970 4385 39  0000 C CNN
+F 2 "SOT65P210X110-5N:SOT65P210X110-5N" H 5970 4680 39  0001 C CNN
+F 3 "" H 5970 4680 39  0001 C CNN
+	1    5970 4680
+	1    0    0    -1  
+$EndComp
+Text GLabel 5270 4480 1    39   Input ~ 0
+3V3
+$Comp
+L C_Small C?
+U 1 1 59B0ABB4
+P 5270 4780
+F 0 "C?" H 5280 4850 50  0000 L CNN
+F 1 "1uF" H 5280 4700 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 5000 4695 28  0000 C CNN
+F 3 "" H 5270 4780 50  0000 C CNN
+	1    5270 4780
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABB5
+P 6480 4965
+F 0 "C?" H 6490 5035 50  0000 L CNN
+F 1 "100nF" H 6490 4885 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 6215 4880 28  0000 C CNN
+F 3 "" H 6480 4965 50  0000 C CNN
+	1    6480 4965
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABB6
+P 6750 4755
+F 0 "C?" H 6760 4825 50  0000 L CNN
+F 1 "4.7uF" H 6760 4675 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 6925 4385 28  0000 C CNN
+F 3 "" H 6750 4755 50  0000 C CNN
+	1    6750 4755
+	1    0    0    -1  
+$EndComp
+Text GLabel 5270 5005 3    39   Input ~ 0
+GND
+Text GLabel 5505 5005 3    39   Input ~ 0
+GND
+Text GLabel 6750 4565 1    39   Input ~ 0
+DAC_2V5
+Text GLabel 6480 5125 3    39   Input ~ 0
+GND
+Text GLabel 6750 4920 3    39   Input ~ 0
+GND
+Text GLabel 7540 8350 0    39   Input ~ 0
+5V
+$Comp
+L C_Small C?
+U 1 1 59B0ABB7
+P 7620 8485
+F 0 "C?" H 7630 8555 50  0000 L CNN
+F 1 "47uF" H 7630 8405 39  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7350 8405 28  0000 C CNN
+F 3 "" H 7620 8485 50  0000 C CNN
+	1    7620 8485
+	1    0    0    -1  
+$EndComp
+Text GLabel 7740 8350 2    39   Input ~ 0
+CM_VBAT
+Text GLabel 7620 8630 3    39   Input ~ 0
+GND
+Text GLabel 7540 8885 0    39   Input ~ 0
+3V3
+$Comp
+L C_Small C?
+U 1 1 59B0ABB8
+P 7620 9020
+F 0 "C?" H 7630 9090 50  0000 L CNN
+F 1 "47uF" H 7630 8940 39  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7350 8940 28  0000 C CNN
+F 3 "" H 7620 9020 50  0000 C CNN
+	1    7620 9020
+	1    0    0    -1  
+$EndComp
+Text GLabel 7740 8885 2    39   Input ~ 0
+CM_3V3
+Text GLabel 7620 9165 3    39   Input ~ 0
+GND
+Text GLabel 7540 9425 0    39   Input ~ 0
+1V8
+$Comp
+L C_Small C?
+U 1 1 59B0ABB9
+P 7620 9560
+F 0 "C?" H 7630 9630 50  0000 L CNN
+F 1 "47uF" H 7630 9480 39  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7350 9475 28  0000 C CNN
+F 3 "" H 7620 9560 50  0000 C CNN
+	1    7620 9560
+	1    0    0    -1  
+$EndComp
+Text GLabel 7740 9425 2    39   Input ~ 0
+CM_1V8
+Text GLabel 7620 9705 3    39   Input ~ 0
+GND
+Text GLabel 7540 9960 0    39   Input ~ 0
+DAC_2V5
+Text GLabel 7740 9960 2    39   Input ~ 0
+CM_VDAC
+Text GLabel 7260 905  0    39   Input ~ 0
+3V3
+$Comp
+L C_Small C?
+U 1 1 59B0ABBA
+P 7340 1040
+F 0 "C?" H 7350 1110 50  0000 L CNN
+F 1 "1uF" H 7350 960 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7060 955 28  0000 C CNN
+F 3 "" H 7340 1040 50  0000 C CNN
+	1    7340 1040
+	1    0    0    -1  
+$EndComp
+Text GLabel 7460 905  2    39   Input ~ 0
+GPIO0-27_VREF
+Text GLabel 7340 1185 3    39   Input ~ 0
+GND
+Text Notes 4690 2290 0    59   ~ 0
+3.3v and 1.8v Regulator
+Text Notes 4695 4210 0    59   ~ 0
+2.5v Regulator
+Text Notes 6755 750  0    59   ~ 0
+GPIO Voltage Select
+Text Notes 7005 8180 0    59   ~ 0
+Compute Module\n       Input
+Text GLabel 2545 825  2    39   Input ~ 0
+EMMC_DISABLE_N
+Text GLabel 7890 4405 0    39   Input ~ 0
+5V
+$Comp
+L C_Small C?
+U 1 1 59B0ABBB
+P 7970 4540
+F 0 "C?" H 7980 4610 50  0000 L CNN
+F 1 "47uF" H 7980 4460 39  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 7700 4460 28  0000 C CNN
+F 3 "" H 7970 4540 50  0000 C CNN
+	1    7970 4540
+	1    0    0    -1  
+$EndComp
+Text GLabel 8260 4405 2    39   Input ~ 0
+USB_VDD
+Text GLabel 7970 4685 3    39   Input ~ 0
+GND
+$Comp
+L C_Small C?
+U 1 1 59B0ABBC
+P 8155 4540
+F 0 "C?" H 8165 4610 50  0000 L CNN
+F 1 "47uF" H 8165 4460 39  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 8415 4420 28  0000 C CNN
+F 3 "" H 8155 4540 50  0000 C CNN
+	1    8155 4540
+	1    0    0    -1  
+$EndComp
+Text GLabel 8155 4685 3    39   Input ~ 0
+GND
+Text Notes 7395 4210 0    59   ~ 0
+USB Voltage Supply
+$Comp
+L USB_OTG P?
+U 1 1 59B0ABBD
+P 9140 6340
+F 0 "P?" H 9465 6215 50  0001 C CNN
+F 1 "USB_OTG/USB_BOOT" H 8905 6755 50  0000 C CNN
+F 2 "Connectors:USB_Micro-B" V 9090 6240 50  0001 C CNN
+F 3 "" V 9090 6240 50  0000 C CNN
+	1    9140 6340
+	-1   0    0    1   
+$EndComp
+Text GLabel 5865 805  1    39   Input ~ 0
+GND
+Text Notes 7055 5665 0    59   ~ 0
+USB IN
+Text GLabel 8135 6740 2    39   Input ~ 0
+USB_VDD
+Text GLabel 8815 6240 0    39   Input ~ 0
+USB_D-
+Text GLabel 8815 6340 0    39   Input ~ 0
+USB_D+
+Text GLabel 9140 5915 1    39   Input ~ 0
+GND
+Text GLabel 9240 5915 1    39   Input ~ 0
+GND
+Text GLabel 7260 1440 0    39   Input ~ 0
+3V3
+$Comp
+L C_Small C?
+U 1 1 59B0ABBE
+P 7340 1575
+F 0 "C?" H 7350 1645 50  0000 L CNN
+F 1 "1uF" H 7350 1495 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 7060 1495 28  0000 C CNN
+F 3 "" H 7340 1575 50  0000 C CNN
+	1    7340 1575
+	1    0    0    -1  
+$EndComp
+Text GLabel 7460 1440 2    39   Input ~ 0
+GPIO28-45_VREF
+Text GLabel 7340 1720 3    39   Input ~ 0
+GND
+$Comp
+L C_Small C?
+U 1 1 59B0ABBF
+P 5125 1630
+F 0 "C?" H 5135 1700 50  0000 L CNN
+F 1 "47uF" H 5135 1550 39  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 5315 1510 20  0000 C CNN
+F 3 "" H 5125 1630 50  0000 C CNN
+	1    5125 1630
+	1    0    0    -1  
+$EndComp
+Text GLabel 5125 1775 3    39   Input ~ 0
+GND
+$Comp
+L R_Small R?
+U 1 1 59B0ABC0
+P 7470 2645
+F 0 "R?" H 7340 2655 50  0000 L CNN
+F 1 "0R" H 7345 2595 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 7290 2165 28  0000 C CNN
+F 3 "" H 7470 2645 50  0000 C CNN
+	1    7470 2645
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABC1
+P 7470 2980
+F 0 "R?" H 7340 2990 50  0000 L CNN
+F 1 "0R" H 7345 2930 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 7290 2795 28  0000 C CNN
+F 3 "" H 7470 2980 50  0000 C CNN
+	1    7470 2980
+	1    0    0    -1  
+$EndComp
+Text Notes 8565 8100 0    59   ~ 0
+uSD Card Slot
+Text GLabel 5870 3005 0    39   Input ~ 0
+GND
+$Comp
+L Fuse F?
+U 1 1 59B0ABC2
+P 5415 1430
+F 0 "F?" V 5495 1430 50  0000 C CNN
+F 1 "Fuse" V 5340 1430 50  0000 C CNN
+F 2 "FUSM4632X85:FUSM4632X85" V 5345 1430 50  0001 C CNN
+F 3 "MF-MSMF200" H 5415 1430 50  0001 C CNN
+	1    5415 1430
+	0    1    1    0   
+$EndComp
+Text GLabel 8730 5940 2    39   Input ~ 0
+GND
+Text Notes 8065 6060 0    20   ~ 0
+bridge for host\nfloat for slave
+$Comp
+L R_Small R?
+U 1 1 59B0ABC3
+P 8225 7100
+F 0 "R?" H 8255 7120 50  0000 L CNN
+F 1 "47k" H 8255 7060 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" V 8145 6980 28  0000 C CNN
+F 3 "" H 8225 7100 50  0000 C CNN
+	1    8225 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8225 7225 3    39   Input ~ 0
+GND
+$Comp
+L DMG1012UW-7 Q?
+U 1 1 59B0ABC4
+P 8500 7275
+F 0 "Q?" H 8745 7315 50  0000 L BNN
+F 1 "DMG1012UW-7" H 8745 7225 50  0000 L BNN
+F 2 "DMG1012UW-7:SOT323" H 8500 7275 50  0001 L BNN
+F 3 "DMG1012T Series 20 V 400 mOhm N-Channel Enhancement Mode Mosfet - SOT-523" H 8500 7275 50  0001 L BNN
+F 4 "0.10 USD" H 8500 7275 50  0001 L BNN "Price"
+F 5 "Diodes Inc." H 8500 7275 50  0001 L BNN "MF"
+F 6 "Good" H 8500 7275 50  0001 L BNN "Availability"
+F 7 "DMG1012T-7" H 8500 7275 50  0001 L BNN "MP"
+F 8 "SOT-523 Diodes Inc." H 8500 7275 50  0001 L BNN "Package"
+	1    8500 7275
+	1    0    0    -1  
+$EndComp
+Text GLabel 8700 7400 3    39   Input ~ 0
+GND
+Text GLabel 8740 6875 2    39   Input ~ 0
+EMMC_DISABLE_N
+$Comp
+L CONN_01X03_MALE J?
+U 1 1 59B0ABC5
+P 7810 6740
+F 0 "J?" H 7650 6740 50  0000 C CNN
+F 1 "CONN_01X03_MALE" H 7350 6635 50  0000 C CNN
+F 2 "Connectors_Samtec:SL-103-X-XX_1x03" H 7810 6940 50  0001 C CNN
+F 3 "" H 7810 6940 50  0001 C CNN
+	1    7810 6740
+	1    0    0    -1  
+$EndComp
+Text Notes 7190 6670 0    20   ~ 0
+Bridge 1-2 (VBUS - USB_VDD) for host\nBridge 2-3 (USB_VDD - mosfet) for slave
+$Comp
+L CONN_01X02_MALE J?
+U 1 1 59B0ABC6
+P 8405 6040
+F 0 "J?" H 8255 5950 50  0000 C CNN
+F 1 "CONN_01X02_MALE" H 8065 5870 50  0000 C CNN
+F 2 "Connectors_Samtec:SL-102-X-XX_1x02" H 8405 6140 50  0001 C CNN
+F 3 "" H 8405 6140 50  0001 C CNN
+	1    8405 6040
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6970 3080
+NoConn ~ 6970 3155
+NoConn ~ 5565 1030
+NoConn ~ 5565 1130
+NoConn ~ 5565 1230
+NoConn ~ 5965 830 
+$Comp
+L GND #PWR?
+U 1 1 59B0ABC7
+P 1570 9905
+F 0 "#PWR?" H 1570 9655 50  0001 C CNN
+F 1 "GND" H 1570 9755 50  0000 C CNN
+F 2 "" H 1570 9905 50  0001 C CNN
+F 3 "" H 1570 9905 50  0001 C CNN
+	1    1570 9905
+	1    0    0    -1  
+$EndComp
+Text GLabel 1570 9850 1    60   Input ~ 0
+GND
+$Comp
+L 104031-0811 J?
+U 1 1 59B0ABC8
+P 10045 8900
+F 0 "J?" H 9744 9522 50  0000 L BNN
+F 1 "104031-0811" H 9744 8198 50  0000 L BNN
+F 2 "104031-0811:MOLEX_104031-0811" H 10045 8900 50  0001 L BNN
+F 3 "104031-0811" H 10045 8900 50  0001 L BNN
+F 4 "None" H 10045 8900 50  0001 L BNN "Package"
+F 5 "1.17 USD" H 10045 8900 50  0001 L BNN "Price"
+F 6 "1.10mm Pitch microSD Memory Card Connector%2C SMT%2C Push-Pull Type%2C 1.42mm Height%2C with Detect Switch" H 10045 8900 50  0001 L BNN "Description"
+F 7 "Molex" H 10045 8900 50  0001 L BNN "MF"
+F 8 "Good" H 10045 8900 50  0001 L BNN "Availability"
+	1    10045 8900
+	1    0    0    -1  
+$EndComp
+Text GLabel 10545 9400 2    39   Input ~ 0
+GND
+Text GLabel 9545 9450 0    39   Input ~ 0
+GND
+Text GLabel 8765 9180 1    39   Input ~ 0
+3V3
+$Comp
+L C_Small C?
+U 1 1 59B0ABC9
+P 8765 9510
+F 0 "C?" H 8775 9580 50  0000 L CNN
+F 1 "4.7uF" H 8775 9430 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 9030 9480 20  0000 C CNN
+F 3 "" H 8765 9510 50  0000 C CNN
+	1    8765 9510
+	1    0    0    -1  
+$EndComp
+Text GLabel 8765 9695 3    39   Input ~ 0
+GND
+Text GLabel 9545 8350 0    39   Input ~ 0
+SDX_D0
+Text GLabel 9545 8450 0    39   Input ~ 0
+SDX_D1
+Text GLabel 9545 8550 0    39   Input ~ 0
+SDX_D2
+Text GLabel 9545 8650 0    39   Input ~ 0
+SDX_D3
+Text GLabel 9545 8750 0    39   Input ~ 0
+SDX_CMD
+Text GLabel 9545 8850 0    39   Input ~ 0
+SDX_CLK
+NoConn ~ 9545 9050
+NoConn ~ 9545 9150
+$Comp
+L R_Small R?
+U 1 1 59B0ABCA
+P 13045 8475
+F 0 "R?" H 13075 8495 50  0000 L CNN
+F 1 "15k" H 13075 8435 39  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 13045 8475 50  0001 C CNN
+F 3 "" H 13045 8475 50  0000 C CNN
+	1    13045 8475
+	1    0    0    -1  
+$EndComp
+Text GLabel 13045 8645 3    39   Input ~ 0
+GND
+Text GLabel 10855 5330 0    39   Input ~ 0
+EN_PWR
+Text GLabel 11435 5430 2    39   Input ~ 0
+VBAT
+Text GLabel 11435 5230 2    39   Input ~ 0
+GND
+Text Notes 10520 2840 0    39   ~ 0
+Voltage Booster
+Text Notes 11380 6400 0    39   ~ 0
+LiPo Battery Charging
+Text Notes 10560 5010 0    39   ~ 0
+Power Switch
+$Comp
+L FAN5333BSX U?
+U 1 1 59B0ABCB
+P 13025 1740
+F 0 "U?" H 12875 1990 39  0000 C CNN
+F 1 "FAN5333BSX" H 13025 1440 39  0000 C CNN
+F 2 "fan5333bsx:SOT95P280X145-5N" H 13025 1615 39  0001 C CNN
+F 3 "" H 13025 1615 39  0001 C CNN
+	1    13025 1740
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L?
+U 1 1 59B0ABCC
+P 13005 1290
+F 0 "L?" H 13035 1330 50  0000 L CNN
+F 1 "BRL3225T150K" H 13035 1250 28  0000 L CNN
+F 2 "Capacitors_SMD:C_1210" H 13005 1290 50  0001 C CNN
+F 3 "" H 13005 1290 50  0000 C CNN
+	1    13005 1290
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 59B0ABCD
+P 13765 1290
+F 0 "D?" H 13715 1370 50  0000 L CNN
+F 1 "MBR0540" H 13615 1210 50  0000 L CNN
+F 2 "Diodes_SMD:D_SOD-123" V 13765 1290 50  0001 C CNN
+F 3 "" V 13765 1290 50  0000 C CNN
+	1    13765 1290
+	-1   0    0    1   
+$EndComp
+$Comp
+L D_Small D?
+U 1 1 59B0ABCE
+P 14050 1610
+F 0 "D?" H 14000 1690 50  0000 L CNN
+F 1 "SMAZ24-TP" H 13900 1530 28  0000 L CNN
+F 2 ".pretty:DIOM794X590X262N" V 14050 1610 50  0001 C CNN
+F 3 "" V 14050 1610 50  0000 C CNN
+	1    14050 1610
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABCF
+P 12455 1765
+F 0 "R?" V 12500 1525 50  0000 L CNN
+F 1 "10k" V 12430 1480 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 12580 1205 50  0000 C CNN
+F 3 "" H 12455 1765 50  0000 C CNN
+	1    12455 1765
+	0    1    1    0   
+$EndComp
+Text GLabel 12545 1915 0    39   Input ~ 0
+GND
+$Comp
+L C_Small C?
+U 1 1 59B0ABD0
+P 14420 1290
+F 0 "C?" V 14340 1340 50  0000 L CNN
+F 1 "1uF" V 14260 1340 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 14825 1400 50  0000 C CNN
+F 3 "" H 14420 1290 50  0000 C CNN
+	1    14420 1290
+	0    1    1    0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABD1
+P 14420 1525
+F 0 "C?" V 14340 1575 50  0000 L CNN
+F 1 "1uF" V 14260 1575 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 14655 1635 50  0000 C CNN
+F 3 "" H 14420 1525 50  0000 C CNN
+	1    14420 1525
+	0    1    1    0   
+$EndComp
+Text GLabel 14725 1290 2    39   Input ~ 0
+GND
+Text GLabel 12315 1025 1    39   Input ~ 0
+5V
+Text GLabel 14050 1045 1    39   Input ~ 0
+24V
+$Comp
+L C_Small C?
+U 1 1 59B0ABD2
+P 12005 1615
+F 0 "C?" V 11925 1665 50  0000 L CNN
+F 1 "10uF" V 11845 1665 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" V 11870 1195 50  0000 C CNN
+F 3 "" H 12005 1615 50  0000 C CNN
+	1    12005 1615
+	0    1    1    0   
+$EndComp
+Text GLabel 11765 1615 0    39   Input ~ 0
+GND
+$Comp
+L C_Small C?
+U 1 1 59B0ABD3
+P 13915 2030
+F 0 "C?" H 13925 2100 50  0000 L CNN
+F 1 "0.1uF" H 13925 1950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 14375 1875 50  0000 C CNN
+F 3 "" H 13915 2030 50  0000 C CNN
+	1    13915 2030
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABD4
+P 13735 2030
+F 0 "R?" H 13765 2065 50  0000 L CNN
+F 1 "12" H 13765 1990 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 14185 2145 50  0000 C CNN
+F 3 "" H 13735 2030 50  0000 C CNN
+	1    13735 2030
+	-1   0    0    1   
+$EndComp
+Text GLabel 13830 2300 3    39   Input ~ 0
+GND
+Text Notes 11150 770  0    39   ~ 0
+Screen Backlight Power
+Text GLabel 14305 1840 2    39   Input ~ 0
+LEDK
+$Comp
+L TEST TP?
+U 1 1 59B0ABD5
+P 14210 1185
+F 0 "TP?" H 14210 1485 50  0000 C BNN
+F 1 "TEST" H 14210 1435 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 14210 1185 50  0001 C CNN
+F 3 "" H 14210 1185 50  0001 C CNN
+	1    14210 1185
+	1    0    0    -1  
+$EndComp
+Text GLabel 14525 4595 3    39   Input ~ 0
+GND
+$Comp
+L L_Small L?
+U 1 1 59B0ABD6
+P 11290 3560
+F 0 "L?" H 11320 3600 50  0000 L CNN
+F 1 "6.8uH" H 11320 3520 50  0000 L CNN
+F 2 "INDC0603X04:INDC0603X04" H 11290 3560 50  0001 C CNN
+F 3 "" H 11290 3560 50  0000 C CNN
+	1    11290 3560
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABD7
+P 10805 4020
+F 0 "C?" H 10640 4095 50  0000 L CNN
+F 1 "10uF" H 10605 3945 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10805 4020 50  0001 C CNN
+F 3 "" H 10805 4020 50  0000 C CNN
+	1    10805 4020
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABD8
+P 11040 4020
+F 0 "C?" H 11050 4090 50  0000 L CNN
+F 1 "100nF" H 11050 3940 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 11040 4020 50  0001 C CNN
+F 3 "" H 11040 4020 50  0000 C CNN
+	1    11040 4020
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABD9
+P 11425 3990
+F 0 "R?" H 11455 4010 50  0000 L CNN
+F 1 "1.87M" H 11455 3950 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 11425 3990 50  0001 C CNN
+F 3 "" H 11425 3990 50  0000 C CNN
+	1    11425 3990
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABDA
+P 11425 4360
+F 0 "R?" H 11455 4380 50  0000 L CNN
+F 1 "340k" H 11455 4320 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 11425 4360 50  0001 C CNN
+F 3 "" H 11425 4360 50  0000 C CNN
+	1    11425 4360
+	1    0    0    -1  
+$EndComp
+Text GLabel 10805 3460 1    39   Input ~ 0
+VBAT
+Text GLabel 11425 4525 3    39   Input ~ 0
+GND
+Text GLabel 11040 4175 3    39   Input ~ 0
+GND
+Text GLabel 10805 4175 3    39   Input ~ 0
+GND
+Text GLabel 12790 3460 0    39   Input ~ 0
+EN_PWR
+$Comp
+L TPS61090 U?
+U 1 1 59B0ABDB
+P 13540 3860
+F 0 "U?" H 13040 4390 50  0000 L BNN
+F 1 "TPS61090" H 13039 2988 50  0000 L BNN
+F 2 "TPS61090:QFN65P400X400X100-17N" H 13540 3860 50  0001 L BNN
+F 3 "the tps6109x devices provide a power supply solution for products powered by either a one-cell li-ion or li-polymer o..." H 13540 3860 50  0001 L BNN
+F 4 "QFN-16 Texas Instruments" H 13540 3860 50  0001 L BNN "Package"
+F 5 "TPS61090" H 13540 3860 50  0001 L BNN "MP"
+F 6 "None" H 13540 3860 50  0001 L BNN "Price"
+F 7 "Unavailable" H 13540 3860 50  0001 L BNN "Availability"
+F 8 "Texas Instruments" H 13540 3860 50  0001 L BNN "MF"
+	1    13540 3860
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 59B0ABDC
+P 14930 3895
+F 0 "C?" H 14940 3965 50  0000 L CNN
+F 1 "2.2uF" H 14940 3815 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 14930 3895 50  0001 C CNN
+F 3 "" H 14930 3895 50  0000 C CNN
+	1    14930 3895
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C?
+U 1 1 59B0ABDD
+P 15255 3900
+F 0 "C?" H 15265 3970 50  0000 L CNN
+F 1 "100uF" H 15265 3820 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Reflow" H 15255 3900 50  0001 C CNN
+F 3 "" H 15255 3900 50  0000 C CNN
+	1    15255 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABDE
+P 14525 3900
+F 0 "R?" H 14555 3920 50  0000 L CNN
+F 1 "1.87M" H 14555 3860 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 14525 3900 50  0001 C CNN
+F 3 "" H 14525 3900 50  0000 C CNN
+	1    14525 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABDF
+P 15495 3585
+F 0 "R?" H 15525 3605 50  0000 L CNN
+F 1 "1k" H 15525 3545 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 15495 3585 50  0001 C CNN
+F 3 "" H 15495 3585 50  0000 C CNN
+	1    15495 3585
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D?
+U 1 1 59B0ABE0
+P 15805 3585
+F 0 "D?" H 15755 3710 50  0000 L CNN
+F 1 "Blue" H 15725 3495 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 15805 3585 50  0001 C CNN
+F 3 "" V 15805 3585 50  0000 C CNN
+	1    15805 3585
+	-1   0    0    1   
+$EndComp
+Text GLabel 15255 3190 1    39   Input ~ 0
+5V
+Text GLabel 16015 3675 3    39   Input ~ 0
+GND
+$Comp
+L TEST TP?
+U 1 1 59B0ABE1
+P 15350 3220
+F 0 "TP?" H 15350 3520 50  0000 C BNN
+F 1 "TEST" H 15350 3470 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 15350 3220 50  0001 C CNN
+F 3 "" H 15350 3220 50  0001 C CNN
+	1    15350 3220
+	0    1    1    0   
+$EndComp
+$Comp
+L Fuse F?
+U 1 1 59B0ABE2
+P 15255 3370
+F 0 "F?" V 15335 3370 50  0000 C CNN
+F 1 "Fuse" V 15180 3370 50  0000 C CNN
+F 2 "FUSM4632X85:FUSM4632X85" V 15185 3370 50  0001 C CNN
+F 3 "MF-MSMF200" H 15255 3370 50  0001 C CNN
+	1    15255 3370
+	-1   0    0    1   
+$EndComp
+Text GLabel 15255 4055 3    39   Input ~ 0
+GND
+Text GLabel 14930 4055 3    39   Input ~ 0
+GND
+$Comp
+L R_Small R?
+U 1 1 59B0ABE3
+P 14525 4160
+F 0 "R?" H 14340 4145 50  0000 L CNN
+F 1 "200k" H 14305 4235 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 14525 4160 50  0001 C CNN
+F 3 "" H 14525 4160 50  0000 C CNN
+	1    14525 4160
+	-1   0    0    1   
+$EndComp
+Text GLabel 14300 4160 2    39   Input ~ 0
+GND
+$Comp
+L DTA143Z Q?
+U 1 1 59B0ABE4
+P 15040 4885
+F 0 "Q?" H 15240 4885 50  0000 L CNN
+F 1 "MMUN2133LT1G" H 15235 4800 50  0000 L CNN
+F 2 "MMUN2133LT1G:SOT95P240X111-3N" H 15040 4885 50  0001 L CNN
+F 3 "" H 15040 4885 50  0000 L CNN
+	1    15040 4885
+	1    0    0    1   
+$EndComp
+Text GLabel 15140 4615 1    39   Input ~ 0
+VBAT
+Text GLabel 12790 3960 0    39   Input ~ 0
+GND
+$Comp
+L R_Small R?
+U 1 1 59B0ABE5
+P 15315 5085
+F 0 "R?" H 15345 5105 50  0000 L CNN
+F 1 "1k" H 15345 5045 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 15315 5085 50  0001 C CNN
+F 3 "" H 15315 5085 50  0000 C CNN
+	1    15315 5085
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D?
+U 1 1 59B0ABE6
+P 15595 5085
+F 0 "D?" H 15545 5210 50  0000 L CNN
+F 1 "Red" H 15515 4990 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 15595 5085 50  0001 C CNN
+F 3 "" V 15595 5085 50  0000 C CNN
+	1    15595 5085
+	-1   0    0    1   
+$EndComp
+Text GLabel 15770 5085 2    39   Input ~ 0
+GND
+$Comp
+L MCP73871-2CAI/ML U?
+U 1 1 59B0ABE7
+P 13945 7710
+F 0 "U?" H 13349 8339 50  0000 L BNN
+F 1 "MCP73871-2CAI/ML" H 13341 6898 50  0000 L BNN
+F 2 "MCP73871-2CAI_ML:QFN50P400X400X100-21N" H 13945 7710 50  0001 L BNN
+F 3 "Fully-Integrated Single Cell Lithium-Ion/Lithium-Polymer Charge Management Contr" H 13945 7710 50  0001 L BNN
+F 4 "QFN-20 Microchip" H 13945 7710 50  0001 L BNN "Package"
+F 5 "MCP73871-2CAI/ML" H 13945 7710 50  0001 L BNN "MP"
+F 6 "1.56 USD" H 13945 7710 50  0001 L BNN "Price"
+F 7 "Good" H 13945 7710 50  0001 L BNN "Availability"
+F 8 "Microchip" H 13945 7710 50  0001 L BNN "MF"
+	1    13945 7710
+	1    0    0    -1  
+$EndComp
+Text GLabel 15060 7410 2    39   Input ~ 0
+VBAT
+$Comp
+L C_Small C?
+U 1 1 59B0ABE8
+P 12305 8395
+F 0 "C?" H 12315 8465 50  0000 L CNN
+F 1 "10uF" H 12315 8315 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 12305 8395 50  0001 C CNN
+F 3 "" H 12305 8395 50  0000 C CNN
+	1    12305 8395
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 59B0ABE9
+P 11975 7985
+F 0 "BT?" H 12075 8035 50  0000 L CNN
+F 1 "JST 2-PH" H 12075 7935 39  0000 L CNN
+F 2 "PHR-2:JST_PHR-2" V 11975 8025 50  0001 C CNN
+F 3 "" V 11975 8025 50  0000 C CNN
+	1    11975 7985
+	-1   0    0    1   
+$EndComp
+Text GLabel 12305 8565 3    39   Input ~ 0
+GND
+Text GLabel 11975 7765 1    39   Input ~ 0
+GND
+$Comp
+L TEST TP?
+U 1 1 59B0ABEA
+P 11975 8290
+F 0 "TP?" H 11975 8590 50  0000 C BNN
+F 1 "TEST" H 11975 8540 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 11975 8290 50  0001 C CNN
+F 3 "" H 11975 8290 50  0001 C CNN
+	1    11975 8290
+	-1   0    0    1   
+$EndComp
+$Comp
+L TEST TP?
+U 1 1 59B0ABEB
+P 11845 7780
+F 0 "TP?" H 11845 8080 50  0000 C BNN
+F 1 "TEST" H 11845 8030 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_2mmDrill" H 11845 7780 50  0001 C CNN
+F 3 "" H 11845 7780 50  0001 C CNN
+	1    11845 7780
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABEC
+P 12625 6760
+F 0 "R?" H 12655 6780 50  0000 L CNN
+F 1 "270k" H 12655 6720 39  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 12625 6760 50  0001 C CNN
+F 3 "" H 12625 6760 50  0000 C CNN
+	1    12625 6760
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABED
+P 12625 7045
+F 0 "R?" H 12655 7065 50  0000 L CNN
+F 1 "100k" H 12655 7005 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 12625 7045 50  0001 C CNN
+F 3 "" H 12625 7045 50  0000 C CNN
+	1    12625 7045
+	1    0    0    -1  
+$EndComp
+Text GLabel 12625 6580 1    39   Input ~ 0
+PWR_IN
+Text GLabel 12625 7215 3    39   Input ~ 0
+GND
+$Comp
+L R_Small R?
+U 1 1 59B0ABEE
+P 15260 7710
+F 0 "R?" V 15180 7715 50  0000 L CNN
+F 1 "1k" V 15215 7565 39  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 15260 7710 50  0001 C CNN
+F 3 "" H 15260 7710 50  0000 C CNN
+	1    15260 7710
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0ABEF
+P 15185 7210
+F 0 "R?" H 15215 7230 50  0000 L CNN
+F 1 "1k" H 15215 7170 39  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 15185 7210 50  0001 C CNN
+F 3 "" H 15185 7210 50  0000 C CNN
+	1    15185 7210
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D?
+U 1 1 59B0ABF0
+P 15545 7710
+F 0 "D?" H 15495 7835 50  0000 L CNN
+F 1 "Orange" H 15610 7835 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 15545 7710 50  0001 C CNN
+F 3 "" V 15545 7710 50  0000 C CNN
+	1    15545 7710
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_Small D?
+U 1 1 59B0ABF1
+P 15470 7210
+F 0 "D?" H 15420 7335 50  0000 L CNN
+F 1 "Green" H 15530 7335 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 15470 7210 50  0001 C CNN
+F 3 "" V 15470 7210 50  0000 C CNN
+	1    15470 7210
+	1    0    0    -1  
+$EndComp
+Text GLabel 15650 7210 2    39   Input ~ 0
+PWR_IN
+Text GLabel 15725 7710 2    39   Input ~ 0
+PWR_IN
+$Comp
+L R_Small R?
+U 1 1 59B0ABF2
+P 15260 7810
+F 0 "R?" V 15325 7810 50  0000 L CNN
+F 1 "1k" V 15290 7670 39  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 15260 7810 50  0001 C CNN
+F 3 "" H 15260 7810 50  0000 C CNN
+	1    15260 7810
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D?
+U 1 1 59B0ABF3
+P 15545 7810
+F 0 "D?" H 15470 7720 50  0000 L CNN
+F 1 "Red" H 15575 7720 50  0000 L CNN
+F 2 "LEDs:LED_1206" V 15545 7810 50  0001 C CNN
+F 3 "" V 15545 7810 50  0000 C CNN
+	1    15545 7810
+	1    0    0    -1  
+$EndComp
+Text GLabel 15725 7810 2    39   Input ~ 0
+PWR_IN
+Text GLabel 12770 7510 0    39   Input ~ 0
+PWR_IN
+Text GLabel 12985 7130 1    39   Input ~ 0
+PWR_IN
+Text GLabel 14910 8110 2    39   Input ~ 0
+GND
+Text GLabel 14910 8210 2    39   Input ~ 0
+GND
+Text GLabel 14910 8310 2    39   Input ~ 0
+GND
+$Comp
+L R_Small R?
+U 1 1 59B0ABF4
+P 12815 7910
+F 0 "R?" V 12775 8075 50  0000 L CNN
+F 1 "1k" V 12780 7990 39  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 12815 7910 50  0001 C CNN
+F 3 "" H 12815 7910 50  0000 C CNN
+	1    12815 7910
+	0    1    1    0   
+$EndComp
+Text GLabel 12640 7910 0    39   Input ~ 0
+GND
+$Comp
+L R_Small R?
+U 1 1 59B0ABF5
+P 12890 8010
+F 0 "R?" V 12965 7975 50  0000 L CNN
+F 1 "100k" V 12970 7805 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 12890 8010 50  0001 C CNN
+F 3 "" H 12890 8010 50  0000 C CNN
+	1    12890 8010
+	0    1    1    0   
+$EndComp
+Text GLabel 12715 8010 0    39   Input ~ 0
+GND
+NoConn ~ 14240 3660
+Text GLabel 12840 3560 0    39   Input ~ 0
+FB
+Text GLabel 14625 4035 2    39   Input ~ 0
+FB
+$Comp
+L STS121PC04 S?
+U 1 1 59B0ABF6
+P 11045 5330
+F 0 "S?" H 10945 5530 50  0000 L BNN
+F 1 "STS121PC04" H 11045 5330 50  0001 L BNN
+F 2 "STS121PC04:STS121PC04" H 11045 5330 50  0001 L BNN
+F 3 "1.05 USD" H 11045 5330 50  0001 L BNN
+F 4 "STS121PC04" H 11045 5330 50  0001 L BNN "MP"
+F 5 "None" H 11045 5330 50  0001 L BNN "Package"
+F 6 "Warning" H 11045 5330 50  0001 L BNN "Availability"
+F 7 "TE Connectivity / Alcoswitch" H 11045 5330 50  0001 L BNN "MF"
+F 8 "Switch Slide SPDT Top Slide 0.3A 125VAC 10000Cycles PC Pins Thru-Hole Bulk" H 11045 5330 50  0001 L BNN "Description"
+	1    11045 5330
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2885 5300 3300
+Wire Wire Line
+	5300 2930 6095 2930
+Connection ~ 5300 2930
+Wire Wire Line
+	5300 2460 5300 2685
+Wire Wire Line
+	5300 2630 6095 2630
+Connection ~ 5300 2630
+Wire Wire Line
+	6095 2705 5975 2705
+Wire Wire Line
+	5975 2705 5975 2630
+Connection ~ 5975 2630
+Wire Wire Line
+	5920 2820 5920 3300
+Wire Wire Line
+	5920 2855 6095 2855
+Connection ~ 5920 2855
+Wire Wire Line
+	5630 3300 5630 2630
+Connection ~ 5630 2630
+Wire Wire Line
+	5870 3155 6095 3155
+Wire Wire Line
+	5870 3080 6095 3080
+Wire Wire Line
+	5300 3500 5300 3590
+Wire Wire Line
+	5630 3500 5630 3590
+Wire Wire Line
+	5920 3500 5920 3590
+Wire Wire Line
+	6970 2855 7100 2855
+Wire Wire Line
+	7300 2855 7840 2855
+Wire Wire Line
+	7590 2435 7590 2920
+Wire Wire Line
+	7590 3120 7590 3195
+Wire Wire Line
+	7840 3120 7840 3195
+Wire Wire Line
+	7840 2770 7840 2920
+Connection ~ 7840 2855
+Wire Wire Line
+	5270 4480 5270 4680
+Wire Wire Line
+	5270 4555 5595 4555
+Wire Wire Line
+	5595 4705 5460 4705
+Wire Wire Line
+	5460 4705 5460 4555
+Connection ~ 5460 4555
+Wire Wire Line
+	5595 4855 5505 4855
+Wire Wire Line
+	5505 4855 5505 5005
+Connection ~ 5270 4555
+Wire Wire Line
+	5270 4880 5270 5005
+Wire Wire Line
+	6345 4630 6750 4630
+Wire Wire Line
+	6750 4565 6750 4655
+Connection ~ 6750 4630
+Wire Wire Line
+	6345 4780 6480 4780
+Wire Wire Line
+	6480 4780 6480 4865
+Wire Wire Line
+	6750 4855 6750 4920
+Wire Wire Line
+	6480 5065 6480 5125
+Wire Wire Line
+	7540 8350 7740 8350
+Wire Wire Line
+	7620 8350 7620 8385
+Connection ~ 7620 8350
+Wire Wire Line
+	7620 8585 7620 8630
+Wire Wire Line
+	7540 8885 7740 8885
+Wire Wire Line
+	7620 8885 7620 8920
+Connection ~ 7620 8885
+Wire Wire Line
+	7620 9120 7620 9165
+Wire Wire Line
+	7540 9425 7740 9425
+Wire Wire Line
+	7620 9425 7620 9460
+Connection ~ 7620 9425
+Wire Wire Line
+	7620 9660 7620 9705
+Wire Wire Line
+	7540 9960 7740 9960
+Wire Wire Line
+	7260 905  7460 905 
+Wire Wire Line
+	7340 905  7340 940 
+Connection ~ 7340 905 
+Wire Wire Line
+	7340 1140 7340 1185
+Wire Wire Line
+	7970 4640 7970 4685
+Wire Wire Line
+	8155 4640 8155 4685
+Wire Wire Line
+	7890 4405 8260 4405
+Wire Wire Line
+	7970 4440 7970 4405
+Connection ~ 7970 4405
+Wire Wire Line
+	8155 4440 8155 4405
+Connection ~ 8155 4405
+Wire Wire Line
+	7260 1440 7460 1440
+Wire Wire Line
+	7340 1440 7340 1475
+Connection ~ 7340 1440
+Wire Wire Line
+	7340 1675 7340 1720
+Wire Wire Line
+	5125 1730 5125 1775
+Wire Wire Line
+	5020 1430 5265 1430
+Wire Wire Line
+	5125 1530 5125 1430
+Connection ~ 5125 1430
+Wire Wire Line
+	6970 2630 6990 2630
+Wire Wire Line
+	6990 2630 6990 2520
+Wire Wire Line
+	6990 2520 7100 2520
+Wire Wire Line
+	7300 2520 7590 2520
+Wire Wire Line
+	7470 2520 7470 2545
+Wire Wire Line
+	7470 2745 7470 2780
+Wire Wire Line
+	7470 2780 6970 2780
+Connection ~ 7590 2520
+Connection ~ 7470 2520
+Wire Wire Line
+	7470 2880 7470 2855
+Connection ~ 7470 2855
+Wire Wire Line
+	7080 3005 7080 3095
+Wire Wire Line
+	7080 3005 6970 3005
+Wire Wire Line
+	7470 3080 7470 3095
+Wire Wire Line
+	7470 3095 7080 3095
+Wire Wire Line
+	5870 3005 6095 3005
+Wire Wire Line
+	8705 6140 8840 6140
+Wire Wire Line
+	8110 6540 8840 6540
+Wire Wire Line
+	8110 6940 8400 6940
+Wire Wire Line
+	8225 6940 8225 7000
+Connection ~ 8225 6940
+Wire Wire Line
+	8400 6940 8400 7175
+Wire Wire Line
+	8700 6875 8740 6875
+Wire Wire Line
+	8110 6740 8135 6740
+Wire Wire Line
+	8225 7200 8225 7225
+Wire Wire Line
+	8700 7400 8700 7375
+Wire Wire Line
+	8815 6340 8840 6340
+Wire Wire Line
+	8815 6240 8840 6240
+Wire Wire Line
+	8730 5940 8705 5940
+Wire Wire Line
+	9240 5915 9240 5940
+Wire Wire Line
+	9140 5915 9140 5940
+Wire Wire Line
+	5865 805  5865 830 
+Wire Wire Line
+	1570 9905 1570 9850
+Wire Notes Line
+	6990 5540 10025 5540
+Wire Notes Line
+	10025 5540 10025 7735
+Wire Notes Line
+	10025 7735 6990 7735
+Wire Notes Line
+	6990 7735 6990 5545
+Wire Notes Line
+	4640 2030 4640 585 
+Wire Notes Line
+	4640 585  6335 585 
+Wire Notes Line
+	6335 585  6335 2030
+Wire Notes Line
+	6335 2030 4640 2030
+Wire Notes Line
+	7370 4090 8795 4090
+Wire Notes Line
+	8795 4090 8795 4980
+Wire Notes Line
+	8795 4980 7370 4980
+Wire Notes Line
+	7370 4980 7370 4090
+Wire Notes Line
+	6990 7980 8270 7980
+Wire Notes Line
+	8270 7980 8270 10185
+Wire Notes Line
+	8270 10185 6990 10185
+Wire Notes Line
+	6990 10185 6990 7980
+Wire Notes Line
+	6730 640  8075 640 
+Wire Notes Line
+	8075 640  8075 2040
+Wire Notes Line
+	8075 2040 6735 2040
+Wire Notes Line
+	6735 2040 6735 640 
+Wire Notes Line
+	4660 4095 7280 4095
+Wire Notes Line
+	7280 4095 7280 5410
+Wire Notes Line
+	7280 5410 4670 5410
+Wire Notes Line
+	4670 5410 4670 4095
+Wire Notes Line
+	4660 2170 8070 2170
+Wire Notes Line
+	8070 2170 8070 3910
+Wire Notes Line
+	8070 3910 4660 3910
+Wire Notes Line
+	4660 3910 4660 2175
+Wire Notes Line
+	8520 7995 10750 7995
+Wire Notes Line
+	10750 7995 10750 10075
+Wire Notes Line
+	10750 10075 8525 10075
+Wire Wire Line
+	9545 9350 8765 9350
+Wire Wire Line
+	8765 9180 8765 9410
+Connection ~ 8765 9350
+Wire Wire Line
+	8765 9610 8765 9695
+Wire Notes Line
+	8525 10075 8525 7995
+Wire Wire Line
+	13045 8575 13045 8645
+Wire Wire Line
+	13045 8310 13045 8375
+Wire Wire Line
+	11345 5230 11435 5230
+Wire Wire Line
+	10945 5330 10855 5330
+Wire Wire Line
+	11345 5430 11435 5430
+Wire Wire Line
+	13105 1290 13665 1290
+Wire Wire Line
+	13520 1290 13520 1690
+Wire Wire Line
+	13520 1690 13400 1690
+Connection ~ 13520 1290
+Wire Wire Line
+	13865 1290 14320 1290
+Wire Wire Line
+	14050 1045 14050 1510
+Wire Wire Line
+	14050 1840 14050 1710
+Wire Wire Line
+	13400 1840 14305 1840
+Wire Wire Line
+	12905 1290 12315 1290
+Wire Wire Line
+	12315 1025 12315 1765
+Wire Wire Line
+	12105 1615 12650 1615
+Wire Wire Line
+	12315 1765 12355 1765
+Connection ~ 12315 1615
+Wire Wire Line
+	12555 1765 12650 1765
+Wire Wire Line
+	12545 1915 12650 1915
+Connection ~ 14050 1290
+Wire Wire Line
+	14210 1525 14320 1525
+Wire Wire Line
+	14210 1185 14210 1525
+Connection ~ 14210 1290
+Wire Wire Line
+	14520 1290 14725 1290
+Wire Wire Line
+	14520 1525 14650 1525
+Wire Wire Line
+	14650 1525 14650 1290
+Connection ~ 14650 1290
+Connection ~ 12315 1290
+Wire Wire Line
+	11765 1615 11905 1615
+Wire Wire Line
+	13735 1930 13735 1840
+Connection ~ 13735 1840
+Wire Wire Line
+	13915 1930 13915 1840
+Connection ~ 13915 1840
+Wire Wire Line
+	13735 2130 13735 2255
+Wire Wire Line
+	13735 2255 13915 2255
+Wire Wire Line
+	13915 2255 13915 2130
+Wire Wire Line
+	13830 2300 13830 2255
+Connection ~ 13830 2255
+Connection ~ 14050 1840
+Wire Notes Line
+	11115 670  11115 2520
+Wire Notes Line
+	11115 2520 15050 2520
+Wire Notes Line
+	15050 2520 15050 670 
+Wire Notes Line
+	15050 670  11115 670 
+Wire Wire Line
+	14525 4260 14525 4595
+Wire Wire Line
+	14240 4260 14525 4260
+Wire Wire Line
+	14240 4360 14525 4360
+Wire Wire Line
+	14525 4360 14525 4355
+Connection ~ 14525 4355
+Wire Wire Line
+	14240 4460 14525 4460
+Connection ~ 14525 4460
+Wire Wire Line
+	11390 3560 12475 3560
+Wire Wire Line
+	10805 3460 10805 3920
+Wire Wire Line
+	10805 3835 12050 3835
+Connection ~ 10805 3835
+Wire Wire Line
+	11040 3920 11040 3835
+Connection ~ 11040 3835
+Wire Wire Line
+	11425 3890 11425 3835
+Connection ~ 11425 3835
+Wire Wire Line
+	11425 4090 11425 4260
+Connection ~ 11425 4170
+Wire Wire Line
+	10805 4120 10805 4175
+Wire Wire Line
+	11040 4120 11040 4175
+Wire Wire Line
+	11425 4460 11425 4525
+Wire Wire Line
+	11855 3635 12405 3635
+Wire Wire Line
+	11855 3635 11855 3560
+Connection ~ 11855 3560
+Wire Wire Line
+	11190 3560 10805 3560
+Connection ~ 10805 3560
+Wire Wire Line
+	12475 3560 12475 4160
+Wire Wire Line
+	12475 4160 12840 4160
+Wire Wire Line
+	12405 3635 12405 4260
+Wire Wire Line
+	12405 4260 12840 4260
+Wire Wire Line
+	12050 3835 12050 3285
+Wire Wire Line
+	12050 3285 14240 3285
+Wire Wire Line
+	14240 3285 14240 3460
+Connection ~ 14315 3760
+Wire Wire Line
+	14930 3760 14930 3795
+Wire Wire Line
+	15255 3520 15255 3800
+Wire Wire Line
+	14930 3995 14930 4055
+Wire Wire Line
+	15255 4000 15255 4055
+Wire Wire Line
+	15395 3585 15255 3585
+Connection ~ 15255 3760
+Connection ~ 15255 3585
+Wire Wire Line
+	15595 3585 15705 3585
+Wire Wire Line
+	15905 3585 16015 3585
+Wire Wire Line
+	16015 3585 16015 3675
+Wire Wire Line
+	15255 3190 15255 3220
+Wire Wire Line
+	15255 3220 15350 3220
+Connection ~ 15255 3220
+Wire Wire Line
+	14300 4160 14240 4160
+Wire Wire Line
+	14695 4560 14695 4885
+Wire Wire Line
+	14695 4885 14790 4885
+Wire Wire Line
+	15140 4615 15140 4685
+Wire Wire Line
+	14240 4560 14695 4560
+Wire Wire Line
+	12790 3960 12840 3960
+Wire Wire Line
+	15140 5085 15215 5085
+Wire Wire Line
+	15415 5085 15495 5085
+Wire Wire Line
+	15695 5085 15770 5085
+Wire Notes Line
+	10480 2720 10480 6145
+Wire Notes Line
+	16140 2725 16140 6145
+Wire Notes Line
+	16140 2725 10475 2725
+Wire Notes Line
+	16140 6145 10480 6145
+Wire Wire Line
+	14845 7410 15060 7410
+Wire Wire Line
+	14920 7410 14920 7510
+Wire Wire Line
+	14920 7510 14845 7510
+Wire Wire Line
+	12305 8495 12305 8565
+Wire Wire Line
+	11975 8210 13045 8210
+Connection ~ 12305 8210
+Wire Wire Line
+	12945 8110 12945 8950
+Wire Wire Line
+	12945 8110 13045 8110
+Wire Wire Line
+	15250 7910 14845 7910
+Wire Wire Line
+	12625 6860 12625 6945
+Wire Wire Line
+	12625 6580 12625 6660
+Wire Wire Line
+	13045 7410 12820 7410
+Wire Wire Line
+	12820 7410 12820 6905
+Wire Wire Line
+	12820 6905 12625 6905
+Connection ~ 12625 6905
+Wire Wire Line
+	12625 7145 12625 7215
+Wire Wire Line
+	15445 7710 15360 7710
+Wire Wire Line
+	15370 7210 15285 7210
+Wire Wire Line
+	15725 7710 15645 7710
+Wire Wire Line
+	15650 7210 15570 7210
+Wire Wire Line
+	15085 7210 14845 7210
+Wire Wire Line
+	15160 7710 14845 7710
+Wire Wire Line
+	15445 7810 15360 7810
+Wire Wire Line
+	15725 7810 15645 7810
+Wire Wire Line
+	15160 7810 14845 7810
+Wire Wire Line
+	12770 7510 13045 7510
+Wire Wire Line
+	12985 7210 13045 7210
+Wire Wire Line
+	12985 7130 12985 7310
+Wire Wire Line
+	12985 7310 13045 7310
+Connection ~ 12985 7210
+Wire Wire Line
+	14910 8110 14845 8110
+Wire Wire Line
+	14910 8210 14845 8210
+Wire Wire Line
+	14910 8310 14845 8310
+Connection ~ 12945 8210
+Connection ~ 14920 7410
+Wire Wire Line
+	13045 7910 12915 7910
+Wire Wire Line
+	12640 7910 12715 7910
+Wire Wire Line
+	13045 8010 12990 8010
+Wire Wire Line
+	12715 8010 12790 8010
+Wire Notes Line
+	11310 6265 11310 9165
+Wire Notes Line
+	16160 9165 16160 6265
+Wire Notes Line
+	16160 6265 11310 6265
+Wire Wire Line
+	11975 7765 11975 7785
+Wire Wire Line
+	11845 7780 11975 7780
+Wire Wire Line
+	11975 7780 11975 7770
+Connection ~ 11975 7770
+Wire Wire Line
+	11975 8185 11975 8290
+Connection ~ 11975 8210
+Wire Wire Line
+	12305 8295 12305 8210
+Wire Wire Line
+	14315 3760 14315 3960
+Wire Wire Line
+	14315 3860 14240 3860
+Wire Wire Line
+	14315 3960 14240 3960
+Connection ~ 14315 3860
+Wire Wire Line
+	15255 3760 15255 3765
+Wire Wire Line
+	14525 3760 14525 3800
+Wire Wire Line
+	14525 4000 14525 4060
+Wire Wire Line
+	14525 4035 14625 4035
+Connection ~ 14525 4035
+Wire Wire Line
+	14240 3760 15255 3760
+Connection ~ 14525 3760
+Connection ~ 14930 3760
+Wire Wire Line
+	11425 4170 12315 4170
+Wire Wire Line
+	12315 4170 12315 3760
+Wire Wire Line
+	12315 3760 12840 3760
+Connection ~ 14525 4260
+Wire Wire Line
+	12840 3460 12790 3460
+$Comp
+L CONN_01X40 P?
+U 1 1 59B0ABF7
+P 4510 8120
+F 0 "P?" H 4620 10070 50  0000 C CNN
+F 1 "40_Pin_LCD_Out" H 4735 10300 50  0000 C CNN
+F 2 "0541324062:MOLEX_0541324062" H 4510 8120 50  0001 C CNN
+F 3 "" H 4510 8120 50  0000 C CNN
+	1    4510 8120
+	-1   0    0    -1  
+$EndComp
+Text GLabel 5305 6570 2    39   Input ~ 0
+R0
+Text GLabel 5305 6670 2    39   Input ~ 0
+R1
+Text GLabel 5305 6770 2    39   Input ~ 0
+R2
+Text GLabel 5305 6870 2    39   Input ~ 0
+R3
+Text GLabel 5305 6970 2    39   Input ~ 0
+R4
+Text GLabel 5305 7070 2    39   Input ~ 0
+R5
+Text GLabel 5305 7170 2    39   Input ~ 0
+R6
+Text GLabel 5305 7270 2    39   Input ~ 0
+R7
+Text GLabel 5305 7370 2    39   Input ~ 0
+G0
+Text GLabel 5305 7470 2    39   Input ~ 0
+G1
+Text GLabel 5305 7570 2    39   Input ~ 0
+G2
+Text GLabel 5305 7670 2    39   Input ~ 0
+G3
+Text GLabel 5305 7770 2    39   Input ~ 0
+G4
+Text GLabel 5305 7870 2    39   Input ~ 0
+G5
+Text GLabel 5305 7970 2    39   Input ~ 0
+G6
+Text GLabel 5305 8070 2    39   Input ~ 0
+G7
+Text GLabel 5305 8170 2    39   Input ~ 0
+B0
+Text GLabel 5305 8270 2    39   Input ~ 0
+B1
+Text GLabel 5305 8370 2    39   Input ~ 0
+B2
+Text GLabel 5305 8470 2    39   Input ~ 0
+B3
+Text GLabel 5305 8570 2    39   Input ~ 0
+B4
+Text GLabel 5305 8670 2    39   Input ~ 0
+B5
+Text GLabel 5305 8770 2    39   Input ~ 0
+B6
+Text GLabel 5305 8870 2    39   Input ~ 0
+B7
+Text GLabel 4815 8970 2    39   Input ~ 0
+GND
+Text GLabel 5935 9070 2    39   Input ~ 0
+ODCK
+Text GLabel 5105 9170 2    39   Input ~ 0
+3V3
+Text GLabel 5935 9370 2    39   Input ~ 0
+HSYNC
+Text GLabel 5935 9270 2    39   Input ~ 0
+VSYNC
+Text GLabel 5935 9170 2    39   Input ~ 0
+DE
+Text GLabel 4810 9670 2    39   Input ~ 0
+GND
+Text GLabel 4820 6470 2    39   Input ~ 0
+3V3
+Text GLabel 4820 6370 2    39   Input ~ 0
+GND
+Text GLabel 4820 6270 2    39   Input ~ 0
+24V
+Text GLabel 4820 6170 2    39   Input ~ 0
+LEDK
+$Comp
+L R_Small R?
+U 1 1 59B0ABF8
+P 4915 9170
+F 0 "R?" V 5380 9285 50  0000 L CNN
+F 1 "10k" V 5310 9285 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 5445 9705 50  0000 C CNN
+F 3 "" H 4915 9170 50  0000 C CNN
+	1    4915 9170
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4815 9170 4710 9170
+Wire Wire Line
+	4810 9670 4710 9670
+Wire Wire Line
+	4710 6470 4820 6470
+Wire Wire Line
+	4710 6370 4820 6370
+Wire Wire Line
+	4820 6270 4710 6270
+Wire Wire Line
+	4710 6170 4820 6170
+Wire Wire Line
+	4710 9070 5450 9070
+Wire Wire Line
+	5330 9370 5330 9270
+Wire Wire Line
+	5360 9470 5360 9370
+Wire Wire Line
+	5015 9170 5105 9170
+Wire Wire Line
+	4710 9370 5330 9370
+Wire Wire Line
+	4710 9270 5095 9270
+Wire Wire Line
+	4710 9470 4985 9470
+Wire Wire Line
+	5300 9170 5300 9305
+Wire Wire Line
+	5300 9305 4985 9305
+Wire Wire Line
+	4985 9305 4985 9470
+Wire Wire Line
+	5095 9470 5360 9470
+Wire Wire Line
+	5095 9270 5095 9470
+Wire Wire Line
+	4710 8970 4815 8970
+Wire Notes Line
+	3955 5865 3955 10170
+Wire Notes Line
+	3955 10170 6830 10170
+Wire Notes Line
+	6830 5870 3955 5870
+Wire Notes Line
+	6830 10170 6830 5870
+$Comp
+L R_Pack04 RN?
+U 1 1 59B0ABF9
+P 5005 6770
+F 0 "RN?" V 4965 7315 50  0000 C CNN
+F 1 "33 R_Pack04" V 5060 7490 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0402" V 5280 6770 50  0001 C CNN
+F 3 "" H 5005 6770 50  0001 C CNN
+	1    5005 6770
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4710 6570 4805 6570
+Wire Wire Line
+	4710 6670 4805 6670
+Wire Wire Line
+	4710 6770 4805 6770
+Wire Wire Line
+	4710 6870 4805 6870
+Wire Wire Line
+	5205 6570 5305 6570
+Wire Wire Line
+	5205 6670 5305 6670
+Wire Wire Line
+	5205 6770 5305 6770
+Wire Wire Line
+	5205 6870 5305 6870
+$Comp
+L R_Pack04 RN?
+U 1 1 59B0ABFA
+P 5005 7170
+F 0 "RN?" V 4965 7715 50  0000 C CNN
+F 1 "33 R_Pack04" V 5055 7885 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0402" V 5280 7170 50  0001 C CNN
+F 3 "" H 5005 7170 50  0001 C CNN
+	1    5005 7170
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4710 6970 4805 6970
+Wire Wire Line
+	4710 7070 4805 7070
+Wire Wire Line
+	4710 7170 4805 7170
+Wire Wire Line
+	4710 7270 4805 7270
+Wire Wire Line
+	5205 6970 5305 6970
+Wire Wire Line
+	5205 7070 5305 7070
+Wire Wire Line
+	5205 7170 5305 7170
+Wire Wire Line
+	5205 7270 5305 7270
+$Comp
+L R_Pack04 RN?
+U 1 1 59B0ABFB
+P 5005 7570
+F 0 "RN?" V 4965 8115 50  0000 C CNN
+F 1 "33 R_Pack04" V 5055 8290 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0402" V 5280 7570 50  0001 C CNN
+F 3 "" H 5005 7570 50  0001 C CNN
+	1    5005 7570
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4710 7370 4805 7370
+Wire Wire Line
+	4710 7470 4805 7470
+Wire Wire Line
+	4710 7570 4805 7570
+Wire Wire Line
+	4710 7670 4805 7670
+Wire Wire Line
+	5205 7370 5305 7370
+Wire Wire Line
+	5205 7470 5305 7470
+Wire Wire Line
+	5205 7570 5305 7570
+Wire Wire Line
+	5205 7670 5305 7670
+$Comp
+L R_Pack04 RN?
+U 1 1 59B0ABFC
+P 5005 7970
+F 0 "RN?" V 4965 8515 50  0000 C CNN
+F 1 "33 R_Pack04" V 5055 8690 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0402" V 5280 7970 50  0001 C CNN
+F 3 "" H 5005 7970 50  0001 C CNN
+	1    5005 7970
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4710 7770 4805 7770
+Wire Wire Line
+	4710 7870 4805 7870
+Wire Wire Line
+	4710 7970 4805 7970
+Wire Wire Line
+	4710 8070 4805 8070
+Wire Wire Line
+	5205 7770 5305 7770
+Wire Wire Line
+	5205 7870 5305 7870
+Wire Wire Line
+	5205 7970 5305 7970
+Wire Wire Line
+	5205 8070 5305 8070
+$Comp
+L R_Pack04 RN?
+U 1 1 59B0ABFD
+P 5005 8370
+F 0 "RN?" V 4965 8915 50  0000 C CNN
+F 1 "33 R_Pack04" V 5055 9095 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0402" V 5280 8370 50  0001 C CNN
+F 3 "" H 5005 8370 50  0001 C CNN
+	1    5005 8370
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4710 8170 4805 8170
+Wire Wire Line
+	4710 8270 4805 8270
+Wire Wire Line
+	4710 8370 4805 8370
+Wire Wire Line
+	4710 8470 4805 8470
+Wire Wire Line
+	5205 8170 5305 8170
+Wire Wire Line
+	5205 8270 5305 8270
+Wire Wire Line
+	5205 8370 5305 8370
+Wire Wire Line
+	5205 8470 5305 8470
+$Comp
+L R_Pack04 RN?
+U 1 1 59B0ABFE
+P 5005 8770
+F 0 "RN?" V 4965 9315 50  0000 C CNN
+F 1 "33 R_Pack04" V 5055 9495 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0402" V 5280 8770 50  0001 C CNN
+F 3 "" H 5005 8770 50  0001 C CNN
+	1    5005 8770
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4710 8570 4805 8570
+Wire Wire Line
+	4710 8670 4805 8670
+Wire Wire Line
+	4710 8770 4805 8770
+Wire Wire Line
+	4710 8870 4805 8870
+Wire Wire Line
+	5205 8570 5305 8570
+Wire Wire Line
+	5205 8670 5305 8670
+Wire Wire Line
+	5205 8770 5305 8770
+Wire Wire Line
+	5205 8870 5305 8870
+$Comp
+L R_Pack04 RN?
+U 1 1 59B0ABFF
+P 5650 9270
+F 0 "RN?" V 5610 9910 50  0000 C CNN
+F 1 "33 R_Pack04" V 5705 10090 50  0000 C CNN
+F 2 "Resistors_SMD:R_Array_Convex_4x0402" V 5925 9270 50  0001 C CNN
+F 3 "" H 5650 9270 50  0001 C CNN
+	1    5650 9270
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 9070 5935 9070
+Wire Wire Line
+	5850 9170 5935 9170
+Wire Wire Line
+	5850 9270 5935 9270
+Wire Wire Line
+	5850 9370 5935 9370
+Wire Wire Line
+	5300 9170 5450 9170
+Wire Wire Line
+	5330 9270 5450 9270
+Wire Wire Line
+	5360 9370 5450 9370
+Text GLabel 1435 825  0    39   Input ~ 0
+GND
+Text GLabel 1435 1050 0    39   Input ~ 0
+GND
+Text GLabel 1435 1275 0    39   Input ~ 0
+GND
+Text GLabel 1435 1500 0    39   Input ~ 0
+GND
+Text GLabel 1435 1725 0    39   Input ~ 0
+GND
+Text GLabel 1435 1950 0    39   Input ~ 0
+GND
+Text GLabel 1435 2175 0    39   Input ~ 0
+GND
+Text GLabel 1435 2550 0    39   Input ~ 0
+GND
+Text GLabel 1435 2775 0    39   Input ~ 0
+GND
+Text GLabel 1435 3000 0    39   Input ~ 0
+GND
+Text GLabel 1435 3225 0    39   Input ~ 0
+GND
+Text GLabel 1435 3450 0    39   Input ~ 0
+GND
+Text GLabel 1435 3675 0    39   Input ~ 0
+GND
+Text GLabel 1435 3900 0    39   Input ~ 0
+GND
+Text GLabel 1435 4125 0    39   Input ~ 0
+GND
+Text GLabel 1435 4350 0    39   Input ~ 0
+GND
+Text GLabel 1435 4575 0    39   Input ~ 0
+GND
+Text GLabel 1435 4800 0    39   Input ~ 0
+GND
+Text GLabel 1435 5025 0    39   Input ~ 0
+GND
+Text GLabel 1435 5250 0    39   Input ~ 0
+GND
+Text GLabel 1435 5475 0    39   Input ~ 0
+GND
+Text GLabel 1435 5700 0    39   Input ~ 0
+GND
+Text GLabel 1435 5925 0    39   Input ~ 0
+GND
+Text GLabel 1435 6150 0    39   Input ~ 0
+GND
+Text GLabel 1435 6375 0    39   Input ~ 0
+GND
+Text GLabel 1435 6600 0    39   Input ~ 0
+GND
+Text GLabel 1435 6825 0    39   Input ~ 0
+GND
+Text GLabel 1435 7050 0    39   Input ~ 0
+GND
+Text GLabel 1435 7275 0    39   Input ~ 0
+GND
+Text GLabel 1435 7725 0    39   Input ~ 0
+GND
+Text GLabel 1435 7950 0    39   Input ~ 0
+GND
+Text GLabel 1435 8250 0    39   Input ~ 0
+GND
+Text GLabel 2545 1725 2    39   Input ~ 0
+GND
+Text GLabel 2545 1950 2    39   Input ~ 0
+GND
+Text GLabel 2545 2175 2    39   Input ~ 0
+GND
+Text GLabel 2545 2550 2    39   Input ~ 0
+GND
+Text GLabel 2545 2775 2    39   Input ~ 0
+GND
+Text GLabel 2545 3000 2    39   Input ~ 0
+GND
+Text GLabel 2545 3225 2    39   Input ~ 0
+GND
+Text GLabel 2545 3450 2    39   Input ~ 0
+GND
+Text GLabel 2545 3675 2    39   Input ~ 0
+GND
+Text GLabel 2545 3900 2    39   Input ~ 0
+GND
+Text GLabel 2545 4125 2    39   Input ~ 0
+GND
+Text GLabel 2545 4350 2    39   Input ~ 0
+GND
+Text GLabel 2545 4575 2    39   Input ~ 0
+GND
+Text GLabel 2545 4800 2    39   Input ~ 0
+GND
+Text GLabel 2545 5025 2    39   Input ~ 0
+GND
+Text GLabel 2545 5250 2    39   Input ~ 0
+GND
+Text GLabel 2545 5475 2    39   Input ~ 0
+GND
+Text GLabel 2545 5925 2    39   Input ~ 0
+GND
+Text GLabel 2545 6150 2    39   Input ~ 0
+GND
+Text GLabel 2545 6375 2    39   Input ~ 0
+GND
+Text GLabel 2545 6600 2    39   Input ~ 0
+GND
+Text GLabel 2545 7050 2    39   Input ~ 0
+GND
+Text GLabel 2545 7275 2    39   Input ~ 0
+GND
+Text GLabel 2545 7725 2    39   Input ~ 0
+GND
+Text GLabel 2545 7950 2    39   Input ~ 0
+GND
+Text GLabel 2545 8250 2    39   Input ~ 0
+GND
+Text GLabel 1435 7800 0    39   Input ~ 0
+CM_1V8
+Text GLabel 1435 7875 0    39   Input ~ 0
+CM_1V8
+Text GLabel 1435 8025 0    39   Input ~ 0
+CM_VDAC
+Text GLabel 1435 8100 0    39   Input ~ 0
+CM_3V3
+Text GLabel 1435 8175 0    39   Input ~ 0
+CM_3V3
+Text GLabel 1435 8325 0    39   Input ~ 0
+CM_VBAT
+Text GLabel 1435 8400 0    39   Input ~ 0
+CM_VBAT
+Text GLabel 2545 7800 2    39   Input ~ 0
+CM_1V8
+Text GLabel 2545 7875 2    39   Input ~ 0
+CM_1V8
+Text GLabel 2545 8025 2    39   Input ~ 0
+CM_VDAC
+Text GLabel 2545 8100 2    39   Input ~ 0
+CM_3V3
+Text GLabel 2545 8175 2    39   Input ~ 0
+CM_3V3
+Text GLabel 2545 8325 2    39   Input ~ 0
+CM_VBAT
+Text GLabel 2545 8400 2    39   Input ~ 0
+CM_VBAT
+Text GLabel 2545 2250 2    39   Input ~ 0
+GPIO0-27_VREF
+Text GLabel 2545 2475 2    39   Input ~ 0
+GPIO28-45_VREF
+Text GLabel 1435 2250 0    39   Input ~ 0
+GPIO0-27_VREF
+Text GLabel 1435 2475 0    39   Input ~ 0
+GPIO28-45_VREF
+$Comp
+L R_Small R?
+U 1 1 59B0AC00
+P 3115 2005
+F 0 "R?" H 3145 2025 50  0000 L CNN
+F 1 "100k" H 3145 1965 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 3630 1745 28  0000 C CNN
+F 3 "" H 3115 2005 50  0000 C CNN
+	1    3115 2005
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0AC01
+P 3305 2005
+F 0 "R?" H 3335 2025 50  0000 L CNN
+F 1 "100k" H 3335 1965 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 3595 1690 28  0000 C CNN
+F 3 "" H 3305 2005 50  0000 C CNN
+	1    3305 2005
+	1    0    0    -1  
+$EndComp
+Text GLabel 3115 2170 3    39   Input ~ 0
+GND
+Text GLabel 3305 2170 3    39   Input ~ 0
+GND
+$Comp
+L R_Small R?
+U 1 1 59B0AC02
+P 3080 4190
+F 0 "R?" H 3110 4210 50  0000 L CNN
+F 1 "100k" H 3110 4150 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 3595 3925 28  0000 C CNN
+F 3 "" H 3080 4190 50  0000 C CNN
+	1    3080 4190
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 59B0AC03
+P 3305 4190
+F 0 "R?" H 3335 4210 50  0000 L CNN
+F 1 "100k" H 3335 4150 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 3595 3875 28  0000 C CNN
+F 3 "" H 3305 4190 50  0000 C CNN
+	1    3305 4190
+	1    0    0    -1  
+$EndComp
+Text GLabel 3080 4355 3    39   Input ~ 0
+GND
+Text GLabel 3305 4355 3    39   Input ~ 0
+GND
+Text GLabel 1435 7125 0    39   Input ~ 0
+USB_D+
+Text GLabel 1435 7200 0    39   Input ~ 0
+USB_D-
+$Comp
+L DDR2_SODIMM_CM_3_Lite U?
+U 1 1 59B0AC04
+P 1990 4675
+F 0 "U?" H 1790 8700 60  0000 C CNN
+F 1 "DDR2_SODIMM_CM_3" H 1990 825 60  0000 C CNN
+F 2 "Sockets:Socket_SODIMM_DDR1-2_TE_1612618_Debug" H 1990 6925 60  0001 C CNN
+F 3 "" H 1990 6925 60  0001 C CNN
+	1    1990 4675
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 900  2    39   Input ~ 0
+3V3
+$Comp
+L C_Small C?
+U 1 1 59B0AC05
+P 2930 1065
+F 0 "C?" H 2940 1135 50  0000 L CNN
+F 1 "4.7uF" H 2940 985 39  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3120 945 20  0000 C CNN
+F 3 "" H 2930 1065 50  0000 C CNN
+	1    2930 1065
+	1    0    0    -1  
+$EndComp
+Text GLabel 2930 1220 3    39   Input ~ 0
+GND
+Text GLabel 2545 1050 2    39   Input ~ 0
+GND
+Text GLabel 2545 1125 2    39   Input ~ 0
+SDX_CLK
+Text GLabel 2545 1200 2    39   Input ~ 0
+SDX_CMD
+Text GLabel 2545 1275 2    39   Input ~ 0
+GND
+Text GLabel 2545 1350 2    39   Input ~ 0
+SDX_D0
+Text GLabel 2545 1425 2    39   Input ~ 0
+SDX_D1
+Text GLabel 2545 1500 2    39   Input ~ 0
+GND
+Text GLabel 2545 1575 2    39   Input ~ 0
+SDX_D2
+Text GLabel 2545 1650 2    39   Input ~ 0
+SDX_D3
+Text GLabel 2845 4520 3    39   Input ~ 0
+1V8
+$Comp
+L R_Small R?
+U 1 1 59B0AC06
+P 2845 4355
+F 0 "R?" H 2875 4375 50  0000 L CNN
+F 1 "100k" H 2875 4315 39  0000 L CNN
+F 2 "Resistors_SMD:R_0402" H 3130 4040 28  0000 C CNN
+F 3 "" H 2845 4355 50  0000 C CNN
+	1    2845 4355
+	1    0    0    -1  
+$EndComp
+Text GLabel 1435 900  0    39   Input ~ 0
+ODCK
+Text GLabel 1435 975  0    39   Input ~ 0
+DE
+Text GLabel 1435 1125 0    39   Input ~ 0
+VSYNC
+Text GLabel 1435 1200 0    39   Input ~ 0
+HSYNC
+Text GLabel 1435 1350 0    39   Input ~ 0
+B0
+Text GLabel 1435 1425 0    39   Input ~ 0
+B1
+Text GLabel 1435 1575 0    39   Input ~ 0
+B2
+Text GLabel 1435 1650 0    39   Input ~ 0
+B3
+Text GLabel 1435 1800 0    39   Input ~ 0
+B4
+Text GLabel 1435 1875 0    39   Input ~ 0
+B5
+Text GLabel 1435 2025 0    39   Input ~ 0
+B6
+Text GLabel 1435 2100 0    39   Input ~ 0
+B7
+Text GLabel 1435 2625 0    39   Input ~ 0
+G0
+Text GLabel 1435 2700 0    39   Input ~ 0
+G1
+Text GLabel 1435 2850 0    39   Input ~ 0
+G2
+Text GLabel 1435 2925 0    39   Input ~ 0
+G3
+Text GLabel 1435 3075 0    39   Input ~ 0
+G4
+Text GLabel 1435 3150 0    39   Input ~ 0
+G5
+Text GLabel 1435 3300 0    39   Input ~ 0
+G6
+Text GLabel 1435 3375 0    39   Input ~ 0
+G7
+Text GLabel 1435 3525 0    39   Input ~ 0
+R0
+Text GLabel 1435 3600 0    39   Input ~ 0
+R1
+Text GLabel 1435 3750 0    39   Input ~ 0
+R2
+Text GLabel 1435 3825 0    39   Input ~ 0
+R3
+Text GLabel 1435 3975 0    39   Input ~ 0
+R4
+Text GLabel 1435 4050 0    39   Input ~ 0
+R5
+Text GLabel 1435 4200 0    39   Input ~ 0
+R6
+Text GLabel 1435 4275 0    39   Input ~ 0
+R7
+Wire Wire Line
+	1435 825  1540 825 
+Wire Wire Line
+	1435 2175 1540 2175
+Wire Wire Line
+	1435 1950 1540 1950
+Wire Wire Line
+	1435 1725 1540 1725
+Wire Wire Line
+	1435 1500 1540 1500
+Wire Wire Line
+	1435 1275 1540 1275
+Wire Wire Line
+	1435 1050 1540 1050
+Wire Wire Line
+	1435 8250 1540 8250
+Wire Wire Line
+	1435 7950 1540 7950
+Wire Wire Line
+	1435 7725 1540 7725
+Wire Wire Line
+	1435 7275 1540 7275
+Wire Wire Line
+	1435 7050 1540 7050
+Wire Wire Line
+	1435 6825 1540 6825
+Wire Wire Line
+	1435 6600 1540 6600
+Wire Wire Line
+	1435 6375 1540 6375
+Wire Wire Line
+	1435 6150 1540 6150
+Wire Wire Line
+	1435 5925 1540 5925
+Wire Wire Line
+	1435 5700 1540 5700
+Wire Wire Line
+	1435 5475 1540 5475
+Wire Wire Line
+	1435 5250 1540 5250
+Wire Wire Line
+	1435 5025 1540 5025
+Wire Wire Line
+	1435 4800 1540 4800
+Wire Wire Line
+	1435 4575 1540 4575
+Wire Wire Line
+	1435 4350 1540 4350
+Wire Wire Line
+	1435 4125 1540 4125
+Wire Wire Line
+	1435 3900 1540 3900
+Wire Wire Line
+	1435 3675 1540 3675
+Wire Wire Line
+	1435 3450 1540 3450
+Wire Wire Line
+	1435 3225 1540 3225
+Wire Wire Line
+	1435 3000 1540 3000
+Wire Wire Line
+	1435 2775 1540 2775
+Wire Wire Line
+	1435 2550 1540 2550
+Wire Wire Line
+	2440 1725 2545 1725
+Wire Wire Line
+	2440 8250 2545 8250
+Wire Wire Line
+	2440 7950 2545 7950
+Wire Wire Line
+	2440 7725 2545 7725
+Wire Wire Line
+	2440 7275 2545 7275
+Wire Wire Line
+	2440 7050 2545 7050
+Wire Wire Line
+	2440 6600 2545 6600
+Wire Wire Line
+	2440 6375 2545 6375
+Wire Wire Line
+	2440 6150 2545 6150
+Wire Wire Line
+	2440 5925 2545 5925
+Wire Wire Line
+	2440 5475 2545 5475
+Wire Wire Line
+	2440 5250 2545 5250
+Wire Wire Line
+	2440 5025 2545 5025
+Wire Wire Line
+	2440 4800 2545 4800
+Wire Wire Line
+	2440 4575 2545 4575
+Wire Wire Line
+	2440 4350 2545 4350
+Wire Wire Line
+	2440 4125 2545 4125
+Wire Wire Line
+	2440 3900 2545 3900
+Wire Wire Line
+	2440 3675 2545 3675
+Wire Wire Line
+	2440 3450 2545 3450
+Wire Wire Line
+	2440 3225 2545 3225
+Wire Wire Line
+	2440 3000 2545 3000
+Wire Wire Line
+	2440 2775 2545 2775
+Wire Wire Line
+	2440 2550 2545 2550
+Wire Wire Line
+	2440 2175 2545 2175
+Wire Wire Line
+	2440 1950 2545 1950
+Wire Wire Line
+	1435 7800 1540 7800
+Wire Wire Line
+	1435 8025 1540 8025
+Wire Wire Line
+	1435 7875 1540 7875
+Wire Wire Line
+	1435 8100 1540 8100
+Wire Wire Line
+	1435 8175 1540 8175
+Wire Wire Line
+	1435 8325 1540 8325
+Wire Wire Line
+	1435 8400 1540 8400
+Wire Wire Line
+	2440 7800 2545 7800
+Wire Wire Line
+	2440 7875 2545 7875
+Wire Wire Line
+	2440 8025 2545 8025
+Wire Wire Line
+	2440 8100 2545 8100
+Wire Wire Line
+	2440 8175 2545 8175
+Wire Wire Line
+	2440 8325 2545 8325
+Wire Wire Line
+	2440 8400 2545 8400
+Wire Wire Line
+	1435 2250 1540 2250
+Wire Wire Line
+	1435 2475 1540 2475
+Wire Wire Line
+	2440 2250 2545 2250
+Wire Wire Line
+	2440 2475 2545 2475
+Wire Wire Line
+	2440 825  2545 825 
+Wire Wire Line
+	2440 1875 3115 1875
+Wire Wire Line
+	3115 1875 3115 1905
+Wire Wire Line
+	2440 1800 3305 1800
+Wire Wire Line
+	3305 1800 3305 1905
+Wire Wire Line
+	3115 2170 3115 2105
+Wire Wire Line
+	3305 2170 3305 2105
+Wire Wire Line
+	3080 4355 3080 4290
+Wire Wire Line
+	3305 4355 3305 4290
+Wire Wire Line
+	2440 4050 3080 4050
+Wire Wire Line
+	3080 4050 3080 4090
+Wire Wire Line
+	2440 3975 3305 3975
+Wire Wire Line
+	3305 3975 3305 4090
+Wire Wire Line
+	1435 7125 1540 7125
+Wire Wire Line
+	1435 7200 1540 7200
+Wire Wire Line
+	2440 900  3000 900 
+Wire Wire Line
+	2930 965  2930 900 
+Connection ~ 2930 900 
+Wire Wire Line
+	2535 975  2440 975 
+Wire Wire Line
+	2535 900  2535 975 
+Connection ~ 2535 900 
+Wire Wire Line
+	2930 1165 2930 1220
+Wire Wire Line
+	2440 1050 2545 1050
+Wire Wire Line
+	2440 1125 2545 1125
+Wire Wire Line
+	2440 1200 2545 1200
+Wire Wire Line
+	2440 1275 2545 1275
+Wire Wire Line
+	2440 1350 2545 1350
+Wire Wire Line
+	2440 1425 2545 1425
+Wire Wire Line
+	2440 1500 2545 1500
+Wire Wire Line
+	2440 1575 2545 1575
+Wire Wire Line
+	2440 1650 2545 1650
+Wire Wire Line
+	2845 4520 2845 4455
+Wire Wire Line
+	2845 4255 2845 4200
+Wire Wire Line
+	1435 4275 1540 4275
+Wire Wire Line
+	1435 4200 1540 4200
+Wire Wire Line
+	1435 4050 1540 4050
+Wire Wire Line
+	1435 3975 1540 3975
+Wire Wire Line
+	1435 3825 1540 3825
+Wire Wire Line
+	1435 3750 1540 3750
+Wire Wire Line
+	1435 3600 1540 3600
+Wire Wire Line
+	1435 3525 1540 3525
+Wire Wire Line
+	1435 3375 1540 3375
+Wire Wire Line
+	1435 3300 1540 3300
+Wire Wire Line
+	1435 3150 1540 3150
+Wire Wire Line
+	1435 3075 1540 3075
+Wire Wire Line
+	1435 2925 1540 2925
+Wire Wire Line
+	1435 2850 1540 2850
+Wire Wire Line
+	1435 2700 1540 2700
+Wire Wire Line
+	1435 2625 1540 2625
+Wire Wire Line
+	1435 2100 1540 2100
+Wire Wire Line
+	1435 2025 1540 2025
+Wire Wire Line
+	1435 1875 1540 1875
+Wire Wire Line
+	1435 1800 1540 1800
+Wire Wire Line
+	1435 1650 1540 1650
+Wire Wire Line
+	1435 1575 1540 1575
+Wire Wire Line
+	1435 1425 1540 1425
+Wire Wire Line
+	1435 1350 1540 1350
+Wire Wire Line
+	1435 900  1540 900 
+Wire Wire Line
+	1435 975  1540 975 
+Wire Wire Line
+	1435 1125 1540 1125
+Wire Wire Line
+	1435 1200 1540 1200
+Wire Wire Line
+	2845 4200 2440 4200
+NoConn ~ 1540 7650
+NoConn ~ 1540 7575
+NoConn ~ 1540 7500
+NoConn ~ 1540 7425
+NoConn ~ 1540 7350
+NoConn ~ 1540 6975
+NoConn ~ 1540 6900
+NoConn ~ 1540 6750
+NoConn ~ 1540 6675
+NoConn ~ 1540 6525
+NoConn ~ 1540 6450
+NoConn ~ 1540 6300
+NoConn ~ 1540 6225
+NoConn ~ 1540 6075
+NoConn ~ 1540 6000
+NoConn ~ 1540 5850
+NoConn ~ 1540 5775
+NoConn ~ 1540 5625
+NoConn ~ 1540 5550
+NoConn ~ 1540 5400
+NoConn ~ 1540 5325
+NoConn ~ 1540 5175
+NoConn ~ 1540 5100
+NoConn ~ 1540 4950
+NoConn ~ 1540 4875
+NoConn ~ 1540 4725
+NoConn ~ 1540 4650
+NoConn ~ 1540 4500
+NoConn ~ 1540 4425
+NoConn ~ 2440 2025
+NoConn ~ 2440 4275
+NoConn ~ 2440 4425
+NoConn ~ 2440 4500
+NoConn ~ 2440 4650
+NoConn ~ 2440 4725
+NoConn ~ 2440 4875
+NoConn ~ 2440 4950
+NoConn ~ 2440 5100
+NoConn ~ 2440 5175
+NoConn ~ 2440 5325
+NoConn ~ 2440 5400
+NoConn ~ 2440 5550
+NoConn ~ 2440 5625
+NoConn ~ 2440 5700
+NoConn ~ 2440 5775
+NoConn ~ 2440 5850
+NoConn ~ 2440 6000
+NoConn ~ 2440 6075
+NoConn ~ 2440 6225
+NoConn ~ 2440 6300
+NoConn ~ 2440 6450
+NoConn ~ 2440 6525
+NoConn ~ 2440 6675
+NoConn ~ 2440 6750
+NoConn ~ 2440 6825
+NoConn ~ 2440 6900
+NoConn ~ 2440 6975
+NoConn ~ 2440 7125
+NoConn ~ 2440 7200
+NoConn ~ 2440 7350
+NoConn ~ 2440 7425
+NoConn ~ 2440 7500
+NoConn ~ 2440 7575
+NoConn ~ 2440 7650
+NoConn ~ 2440 2625
+NoConn ~ 2440 2700
+NoConn ~ 2440 2850
+NoConn ~ 2440 2925
+NoConn ~ 2440 3075
+NoConn ~ 2440 3150
+NoConn ~ 2440 3300
+NoConn ~ 2440 3375
+NoConn ~ 2440 3525
+NoConn ~ 2440 3600
+NoConn ~ 2440 3750
+NoConn ~ 2440 3825
+NoConn ~ 2440 2100
+NoConn ~ 4710 9570
+NoConn ~ 4710 9770
+NoConn ~ 4710 9870
+NoConn ~ 4710 9970
+NoConn ~ 4710 10070
+Wire Wire Line
+	12945 8950 15250 8950
+Wire Wire Line
+	15250 8950 15250 7910
+Wire Notes Line
+	11310 9165 16160 9165
+Connection ~ 12940 7510
+Wire Wire Line
+	12940 7510 12940 7610
+Wire Wire Line
+	12940 7610 13045 7610
+Wire Wire Line
+	12890 7510 12890 7710
+Wire Wire Line
+	12890 7710 13045 7710
+Connection ~ 12890 7510
+Wire Wire Line
+	12845 7510 12845 7810
+Wire Wire Line
+	12845 7810 13045 7810
+Connection ~ 12845 7510
+$EndSCHEMATC

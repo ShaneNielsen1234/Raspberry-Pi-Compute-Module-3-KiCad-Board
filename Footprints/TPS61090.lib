@@ -1,0 +1,42 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# TPS61090
+#
+DEF TPS61090 U 0 40 Y Y 1 L N
+F0 "U" -500 530 50 H V L BNN
+F1 "TPS61090" -501 -872 50 H V L BNN
+F2 "QFN65P400X400X100-17N" 0 0 50 H I L BNN
+F3 "the tps6109x devices provide a power supply solution for products powered by either a one-cell li-ion or li-polymer o..." 0 0 50 H I L BNN "Description"
+F4 "QFN-16 Texas Instruments" 0 0 50 H I L BNN "Package"
+F5 "TPS61090" 0 0 50 H I L BNN "MP"
+F6 "None" 0 0 50 H I L BNN "Price"
+F7 "Unavailable" 0 0 50 H I L BNN "Availability"
+F8 "Texas Instruments" 0 0 50 H I L BNN "MF"
+DRAW
+P 2 0 0 10 -500 500 -500 -800 N
+P 2 0 0 10 -500 -800 500 -800 N
+P 2 0 0 10 500 -800 500 500 N
+P 2 0 0 10 500 500 -500 500 N
+X FB 14 -700 300 200 R 40 40 0 0 I 
+X EN 11 -700 400 200 R 40 40 0 0 I 
+X PGND@1 5 700 -400 200 L 40 40 0 0 I 
+X VOUT@2 15 700 0 200 L 40 40 0 0 O 
+X SW@2 4 -700 -400 200 R 40 40 0 0 I 
+X SYNC 10 -700 -100 200 R 40 40 0 0 I 
+X LBI 9 -700 100 200 R 40 40 0 0 I 
+X VOUT@3 16 700 -100 200 L 40 40 0 0 O 
+X VOUT@1 1 700 100 200 L 40 40 0 0 O 
+X VBAT 8 700 400 200 L 40 40 0 0 I 
+X LBO 12 700 200 200 L 40 40 0 0 O 
+X SW@1 3 -700 -300 200 R 40 40 0 0 I 
+X POWER_PAD 17 700 -700 200 L 40 40 0 0 I 
+X PGND@2 6 700 -500 200 L 40 40 0 0 I 
+X PGND@3 7 700 -600 200 L 40 40 0 0 I 
+X GND 13 700 -300 200 L 40 40 0 0 I 
+ENDDRAW
+ENDDEF
+#
+# End Library

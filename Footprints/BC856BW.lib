@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# BC856BW
+#
+DEF BC856BW U 0 40 Y Y 1 L N
+F0 "U" 481 250 50 H V L BNN
+F1 "BC856BW" 547 -523 50 H V L BNN
+F2 "SO65P210X100-3N" 0 0 50 H I L BNN
+F3 "BC856BW" 0 0 50 H I L BNN "MP"
+F4 "SOT-323 Diodes Inc." 0 0 50 H I L BNN "Package"
+F5 "0.07 USD" 0 0 50 H I L BNN "Price"
+F6 "Transistor%2C Pnp%2C 65v%2C 0.1a%2C Sot323-3" 0 0 50 H I L BNN "Description"
+F7 "Diodes Inc." 0 0 50 H I L BNN "MF"
+F8 "Good" 0 0 50 H I L BNN "Availability"
+DRAW
+P 2 0 0 5 200 200 200 -400 N
+P 2 0 0 5 200 -400 1200 -400 N
+P 2 0 0 5 1200 -400 1200 200 N
+P 2 0 0 5 1200 200 200 200 N
+X B 1 0 0 200 R 40 40 0 0 P 
+X E 2 0 -200 200 R 40 40 0 0 P 
+X C 3 1400 0 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

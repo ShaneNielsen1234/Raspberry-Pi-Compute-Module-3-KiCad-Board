@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# STS121PC04
+#
+DEF STS121PC04 S 0 40 N N 1 L N
+F0 "S" -100 200 50 H V L BNN
+F1 "STS121PC04" 0 0 50 H I L BNN
+F2 "STS121PC04" 0 0 50 H I L BNN
+F3 "1.05 USD" 0 0 50 H I L BNN "Price"
+F4 "STS121PC04" 0 0 50 H I L BNN "MP"
+F5 "None" 0 0 50 H I L BNN "Package"
+F6 "Warning" 0 0 50 H I L BNN "Availability"
+F7 "TE Connectivity / Alcoswitch" 0 0 50 H I L BNN "MF"
+F8 "Switch Slide SPDT Top Slide 0.3A 125VAC 10000Cycles PC Pins Thru-Hole Bulk" 0 0 50 H I L BNN "Description"
+DRAW
+C 0 0 30 0 0 10 N
+C 200 100 30 0 0 10 N
+C 200 -100 30 0 0 10 N
+P 2 0 0 10 0 0 180 160 N
+T 0 260 110 40 0 0 0 A Normal 0 C B
+T 0 260 -90 40 0 0 0 B Normal 0 C B
+X 2 2 -100 0 100 R 40 40 0 0 B 
+X 1 1 300 100 100 L 40 40 0 0 B 
+X 3 3 300 -100 100 L 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library
